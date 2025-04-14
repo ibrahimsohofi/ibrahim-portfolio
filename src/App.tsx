@@ -3,6 +3,9 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Header from './components/layout/Header';
 import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Projects from './components/sections/Projects';
+import Contact from './components/sections/Contact';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -119,22 +122,14 @@ function App() {
       {/* Hero Section */}
       <Hero onScrollToSection={scrollToSection} />
 
-      {/* Add other sections here */}
-      <div id="about" className="min-h-screen flex items-center justify-center">
-        <h2 className="text-4xl">About Section (Coming Soon)</h2>
-      </div>
+      {/* About Section */}
+      <About />
 
-      <div id="skills" className="min-h-screen flex items-center justify-center">
-        <h2 className="text-4xl">Skills Section (Coming Soon)</h2>
-      </div>
+      {/* Projects Section */}
+      <Projects />
 
-      <div id="projects" className="min-h-screen flex items-center justify-center">
-        <h2 className="text-4xl">Projects Section (Coming Soon)</h2>
-      </div>
-
-      <div id="contact" className="min-h-screen flex items-center justify-center">
-        <h2 className="text-4xl">Contact Section (Coming Soon)</h2>
-      </div>
+      {/* Contact Section */}
+      <Contact />
     </div>
   );
 }
