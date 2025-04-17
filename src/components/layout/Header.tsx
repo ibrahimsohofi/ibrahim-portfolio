@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
+import { Analytics } from "@vercel/analytics/react"
 
 interface HeaderProps {
   onScrollToSection: (sectionId: string) => void;
